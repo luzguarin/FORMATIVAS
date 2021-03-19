@@ -1,0 +1,219 @@
+/* Títulos, enlaces y botones subtítulos, párrafos, formularios y otras etiquetas de textos*/
+h1, h2, h3, h4, h5, p, a, button, form, input, select, textarea, option, table, tr, th, td, span, div, strong,
+em { font-family: 'Roboto', sans-serif; }
+
+/*subtítulos H6*/
+h6 { font-family: 'Permanent Marker', cursive; }
+
+
+/* asignar display: block; a todas las cajas de estructura */
+header, main, footer, aside, section, article, figure, nav, figcaption, div { display: block; }
+
+
+/* quitar margen por defecto a etiquetas que lo traigan */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0 }
+
+/* quitar scroll horizontal del body */
+body { margin: 0; overflow-x: hidden; background: #000; }
+
+
+/* CSS propio */
+
+/* componente móvil */
+aside#menu-movil { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 9999; background: rgb(70 70 70); }
+
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; right: -60px; z-index: 99996; color: #fff; background-color: #39afc9; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#abrir:hover { background: #39afc9; transition: all 0.3s ease-in; }
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; right: -60px; z-index: 99996; color: #fff; background-color: #39afc9; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#cerrar:hover { background: #39afc9; transition: all 0.3s ease-in; }
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #39afc9; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: #ffffff; transition: all 0.3s ease-in; }
+
+
+
+/* componentes: HEADER */
+
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 9998; margin: 0; float: none; }
+header article { width: 1100px; height: 100px; position: relative; margin: 0 auto; float: none;}
+header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0 auto; float: none; top: 10px; }
+header article a img { width: auto;  height: 80px; display: block; position: relative;  margin: 0 auto;  float: none; }
+
+.transparente { background: rgb(250 69 21 / 0%); }
+.naranja {background: rgb(26 27 23); } 
+
+
+/* componente contendor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+
+ 
+/* slide home */ 
+
+main section#slide-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; /* background: url(../img/foto-slide-001.jpg) no-repeat top center; background-size: cover; */ }
+
+main section#slide-home article  { width: 100%; height: 100vh; position: relative; margin: 0 auto; float: none;}
+main section#slide-home article figure { width: 100%; height: 100vh; position: relative; margin: 0;}
+
+main section#slide-home article figure.slide-01 { background: url(../img/foto-slide-001.jpg) no-repeat repeat center; background-size: cover;}
+main section#slide-home article figure.slide-02 { background: url(../img/foto-slide-002.jpg) no-repeat repeat center; background-size: cover;}
+main section#slide-home article figure.slide-03 { background: url(../img/foto-slide-003.jpg) no-repeat repeat center; background-size: cover;}
+
+.slick-next { right: 30px !important; z-index: 999; }
+.slick-prev { left: 30px !important;  z-index: 999; } 
+ 
+.slick-dots { bottom: 30px !important; }     
+.slick-dots li button { width: 10px !important; height: 10px !important; }  
+.slick-dots li button:before { width: 10px !important; height: 10px !important; font-size: 1em !important; color:transparent !important; border-radius: 50% !important; background: #39afc9 !important;  opacity: 1 !important;}
+.slick-dots li.slick-active button:before { width: 10px !important; height: 10px !important; color: transparent !important; background: #fff !important; opacity: 1 !important;}
+
+
+ 
+
+
+/* componente Banner inicial */
+
+main section#banner { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#banner nav{ width: 100%; height: 560px; position: relative; margin: 0 auto; float: none; background: #39afc9; }
+main section#banner nav a { position: absolute; display: block; transition: 0.3s ease-in;}
+main section#banner nav a:hover { opacity: 0.8; transition: 0.3s ease-in;}
+main section#banner nav a#img-banner-01 { width: 50%; height: 100%; top: 0; left: 0; background: url(../img/fotos-grupo1-001.jpg) no-repeat repeat center; background-size: cover;  }
+main section#banner nav a#img-banner-02{ width: 50%; height: 50%; top: 0; right: 0; background: url(../img/fotos-grupo1-002.jpg) no-repeat repeat center; background-size: cover; }
+main section#banner nav a#img-banner-03{ width: 15%; height: 50%; bottom: 0; right: 35%; background: url(../img/fotos-grupo1-003.jpg) no-repeat repeat center; background-size: cover; }
+main section#banner nav a#img-banner-04{ width: 35%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo1-004.jpg) no-repeat repeat center; background-size: cover;  }
+
+
+/* componente grilla web */
+
+main section#grilla-web { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff}
+main section#grilla-web article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; padding: 60px 0; }
+main section#grilla-web article a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; 
+ display: inline-block; overflow:hidden; transition: all 0.3s ease-in; } 
+main section#grilla-web article a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in;}
+main section#grilla-web article a:hover { opacity: 0.8; transition: all 0.3s ease-in;}
+main section#grilla-web article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in; }
+
+
+
+/* componente fotos home */
+
+main section#fotos-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+main section#fotos-home a#boton-naranja { width: 50px;  height: auto; display: block; float: none; position: absolute; top: -25px; left: 150px; z-index: 50; border-radius: 50%; color: #fff ; background: #39afc9;; text-align: center; text-decoration: none; font-size: 2.5em; line-height: 1em; padding: 5px 0; transition: all 0.3s ease-in;} 
+
+main section#fotos-home a#boton-naranja:hover { transform: rotate(-45deg); background: #39afc9; transition: all 0.3s ease-in;} 
+
+main section#fotos-home nav { width: 100%; height: 1000px; position: relative; margin: 0 auto; float: none; background: #39afc9;} 
+
+main section#fotos-home nav a {position: absolute; display: block; transition: 0.3s ease-in;}
+
+main section#fotos-home nav a:hover { opacity: 0.8; transition: 0.3s ease-in; }
+
+main section#fotos-home nav a#img-fotos-home-01 { width: 50%; height: 50%; top: 0; left: 0; background: url(../img/fotos-grupo3-001.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-02 { width: 25%; height: 25%; top: 0; right: 25%; background: url(../img/fotos-grupo3-002.jpg) no-repeat repeat center; background-size: cover;} 
+
+main section#fotos-home nav a#img-fotos-home-03 {width: 25%; height: 25%; top: 0; right: 0; background: url(../img/fotos-grupo3-003.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-04 {width: 50%; height: 25%; top: 25%; right: 0; background: url(../img/fotos-grupo3-004.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-05 { width: 50%; height: 25%; bottom: 25%; left: 0; background: url(../img/fotos-grupo3-005.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-06 { width: 25%; height: 25%; bottom: 0; left: 0; background: url(../img/fotos-grupo3-006.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-07 { width: 25%; height: 25%; bottom: 0; left: 25%; background: url(../img/fotos-grupo3-007.jpg) no-repeat repeat center; background-size: cover;}
+
+main section#fotos-home nav a#img-fotos-home-08 { width: 50%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo3-008.jpg) no-repeat repeat center; background-size: cover;}
+
+
+/* componente footer */
+
+footer { width: 100%; height: 300px; position: relative; margin: 0 auto; float: none; background: #1a1b17; }
+
+
+
+
+
+/* Zona de Media Queries */
+
+/* MQ para tablets = Breackpont 1199px */
+@media only screen and (max-width: 1199px) {
+
+aside#menu-movil a#abrir,
+aside#menu-movil a#cerrar { top: 19px }
+
+
+header { height: 80px;}
+header article { width: 90%; height: 80px; }
+header article a { width: 118px; height: 50px; margin: 0; float: right; top: 15px; }
+header article a img { width: 100px; height: auto; }
+
+
+main { margin: 80px auto o auto; } 
+
+
+main section#slide-home article { height: 80vh;}
+
+main section#banner nav{ height: 500px; }
+main section#banner nav a { position: relative; float: left;}
+main section#banner nav a#img-banner-01{ width: 50%; height: 50%;  }
+main section#banner nav a#img-banner-02{ width: 50%; height: 50%; }
+main section#banner nav a#img-banner-03{ width: 50%; height: 50%; bottom: 0; right: 0; }
+main section#banner nav a#img-banner-04{ width: 50%; height: 50%; }
+
+main section#grilla-web article { width: 80%; }
+main section#grilla-web article a { width: 300px; height: 300px; margin: 0 auto 35px; display: block; } 
+
+
+
+
+
+main section#fotos-home nav {  height: 1030px;}
+
+main section#fotos-home a#boton-naranja { top: 25px; left: 25px;} 
+
+main section#fotos-home nav a { position: relative; float: left;}
+
+main section#fotos-home nav a:hover { opacity: 0.8; transition: 0.3s ease-in; }
+
+main section#fotos-home nav a#img-fotos-home-01 { width: 100%; height: 290px;}
+
+main section#fotos-home nav a#img-fotos-home-02,
+
+main section#fotos-home nav a#img-fotos-home-03,
+
+main section#fotos-home nav a#img-fotos-home-04,
+
+main section#fotos-home nav a#img-fotos-home-05,
+
+main section#fotos-home nav a#img-fotos-home-06,
+
+main section#fotos-home nav a#img-fotos-home-07 { width: 50%; height: 150px;}
+
+main section#fotos-home nav a#img-fotos-home-02 { right: 0; }
+main section#fotos-home nav a#img-fotos-home-04 { top: 0; }
+main section#fotos-home nav a#img-fotos-home-05 { bottom: 0; }
+main section#fotos-home nav a#img-fotos-home-07 { left: 0; }
+
+main section#fotos-home nav a#img-fotos-home-08 { width: 100%; height: 290px;}
+
+
+
+
+
+}
+
+/* Breackpont 799px */
+@media only screen and (max-width: 799px) { }
+
+
+/* MQ para móviles grandes = Breackpont 499px */
+@media only screen and (max-width: 499px) { }
+
+
+/* MQ para móviles pequeños = Breackpont 399px */
+@media only screen and (max-width: 399px) {
+    main section#grilla-web article a { width: 100px; height: auto; margin: 0 auto 35px; display: block; } 
+ }
